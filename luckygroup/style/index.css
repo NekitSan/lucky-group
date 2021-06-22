@@ -46,7 +46,7 @@ iframe {
   max-width: 1280px;
   min-height: 100vh;
   margin: 0 auto;
-  background-color: #333;
+  background-color: #F4F4F4;
   color: #212121;
   font-family: "Montserrat", sans-serif;
   font-weight: 600; }
@@ -107,8 +107,9 @@ iframe {
     .form__fields_title {
       width: 100%;
       height: 136px;
-      background-color: #F8F8F8;
       padding: 29px 128px 29px 129px;
+      background-color: #F8F8F8;
+      border-top-right-radius: 30px;
       font-weight: 800;
       font-size: 30px; }
     .form__fields_content {
@@ -126,6 +127,62 @@ iframe {
         width: 100%; }
         .form__fields_content__item:first-child {
           margin-bottom: 20px; }
+        .form__fields_content__item_contacts {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          gap: 10px; }
+          .form__fields_content__item_contacts .lang {
+            position: relative;
+            width: auto;
+            font-weight: 600;
+            font-size: 14px;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                -ms-user-select: none;
+                    user-select: none;
+            background-color: #F8F8F8;
+            border: solid 1px #E4E4E4;
+            border-radius: 5px; }
+            .form__fields_content__item_contacts .lang:hover {
+              border: solid 1px #333; }
+            .form__fields_content__item_contacts .lang__preview {
+              position: relative;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              gap: 10px;
+              height: 100%;
+              padding: 16px 20px;
+              z-index: 10;
+              cursor: pointer; }
+              .form__fields_content__item_contacts .lang__preview--set_lang__image {
+                width: 26.18px;
+                height: 18px;
+                background-image: url("../images/icons/ru.svg");
+                background-position: center;
+                background-repeat: no-repeat; }
+              .form__fields_content__item_contacts .lang__preview--set_lang__icon {
+                width: 11px;
+                height: 6px;
+                background-image: url("../images/icons/arrow-down.svg");
+                background-position: center;
+                background-repeat: no-repeat; }
+            .form__fields_content__item_contacts .lang__contr {
+              position: absolute;
+              top: 100%;
+              width: 100%;
+              background-color: #F8F8F8;
+              border: solid 1px #E4E4E4;
+              z-index: 9; }
+              .form__fields_content__item_contacts .lang__contr__item {
+                cursor: pointer; }
         .form__fields_content__item--text {
           margin-bottom: 10px;
           text-align: left;
@@ -141,7 +198,8 @@ iframe {
           font-weight: 600;
           font-size: 14px;
           background-color: #F8F8F8;
-          border: solid 1px #E4E4E4; }
+          border: solid 1px #E4E4E4;
+          border-radius: 5px; }
           .form__fields_content__item--input::-webkit-input-placeholder {
             color: #212121;
             opacity: 0.2; }
@@ -179,7 +237,7 @@ iframe {
                     transform: translate(10px, -45%);
             width: 18px;
             height: 12px;
-            background-image: url("../images/next.svg"); }
+            background-image: url("../images/icons/next.svg"); }
   .form__security {
     display: none;
     -webkit-box-pack: center;
@@ -197,7 +255,7 @@ iframe {
   .form__security--icon {
     width: 12.14px;
     height: 15px;
-    background-image: url("../images/lock.svg"); }
+    background-image: url("../images/icons/lock.svg"); }
 
 @media screen and (max-width: 1120px) {
   .webp .form .form__preview {
@@ -266,6 +324,8 @@ iframe {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         margin: 28px 0 28px; }
+        .form__fields_content .lang__preview {
+          padding: 16px 10px; }
     .form__security {
       display: -webkit-box;
       display: -ms-flexbox;
