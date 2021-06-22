@@ -1,5 +1,5 @@
 let preprocessor = 'sass';
-const dist = require("path").basename(__dirname) + '/';
+const dist = require("path").basename(__dirname).toLowerCase() + '/';
 
 const { src, dest, parallel, series, watch } = require('gulp');
 
