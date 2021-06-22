@@ -137,6 +137,7 @@ iframe {
             width: auto;
             font-weight: 600;
             font-size: 14px;
+            text-transform: uppercase;
             -webkit-user-select: none;
                -moz-user-select: none;
                 -ms-user-select: none;
