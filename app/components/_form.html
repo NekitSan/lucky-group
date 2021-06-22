@@ -15,9 +15,12 @@
                 <div class="form__fields_content__item--text">Ваше <span>имя</span></div>
                 <input class="form__fields_content__item--input" type="text" placeholder="Алексей" required>
             </label>
-            <label class="form__fields_content__item form__fields_content__item--multi">
+            <label class="form__fields_content__item">
                 <div class="form__fields_content__item--text">Ваш <span>телефон</span></div>
-                <input class="form__fields_content__item--input" type="text" placeholder="+7 (123) 456 78-90" required>
+                <div class="form__fields_content__item_contacts">
+                    <input class="form__fields_content__item--input" type="text" placeholder="+7 (123) 456 78-90" required>
+                    @@include('_lang.html')
+                </div>
             </label>
             <button class="form__fields_content--button"><span>Заказать</span></button>
         </form>
